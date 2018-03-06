@@ -1,6 +1,6 @@
-!/bin/bash
+#!/bin/bash
 file=/srv/Scripts/lesson/passwd.backup
-a=`cmp -s /etc/passwd /srv/Scripts/lesson/passwd.backup` && echo 'CKs'
+a=`cmp -s /etc/passwd /srv/Scripts/lesson/passwd.backup` && echo "All fine it's same"
 if [ -f $file ]; then
 
 $a
